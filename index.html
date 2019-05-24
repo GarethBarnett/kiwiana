@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Tourism NZ</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./css/fullpage.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/swiper.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/jquery.bullseye.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/datedropper.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/datestylesheet.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <div class="loadingscreen">
+        <div class="wrapper">
+          <div class="vignette"></div>
+          <div class="loadinglogo">
+            <img src="img/loadinglogo.png" alt="loadinglogo">
+          </div>
+          <div class="vansmall">
+            <div class="strikes">
+              <div class="strike"></div>
+              <div class="strike strike2"></div>
+              <div class="strike strike3"></div>
+              <div class="strike strike4"></div>
+              <div class="strike strike5"></div>
+            </div>
+            <img class="vanimgsmall shakey" src="img/vanside.png" alt="vanside">
+            <img class="vanwheel1small loading" src="img/wheel.png" alt="vanwheel1">
+            <img class="vanwheel2small loading" src="img/wheel.png" alt="vanwheel2">
+          </div>
+        </div>
+        <h2>Loading&hellip;</h2>
+      </div>
+    </header>
+    <ul id="menu" class="hide">
+      <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Location</a></li>
+      <li data-menuanchor="slide1" class="active"><a href="#firstPage/1">Dates</a></li>
+      <li data-menuanchor="slide3" class="active"><a href="#firstPage/3">People</a></li>
+      <li data-menuanchor="secondPage"><a href="#secondPage">Options</a></li>
+    </ul>
+    <div id="fullpage">
+      <!--SECTION 1 END-->
+      <div class="section" data-anchor="firstPage">
+        <!--Slide 1-->
+        <div class="slide slide1" data-anchor="secondPage">
+          <div class="logo">
+            <img class="kiwiana animated fadeInDownBig slow" src="img/kiwiana.png" alt="kiwiana">
+            <img class="animated fadeInDown" src="img/adventure.png" alt="adventure">
+            <img class="transportbooking animated fadeInDownBig" src="img/transportbooking.png" alt="transportbooking">
+          </div>
+          <div class="cloud1"></div>
+          <div class="planes1 planefly floating">
+            <img class="planeimg animated slower" src="img/planes1.png" alt="plane">
+          </div>
+          <div class="bgsection1s1"></div>
+          <div class="s1sign"><img src="img/pickdropoff.png" alt="s1sign"></div>
+          <div class="s1signform">
+            <form class="s1signinput">
+              <select name="pickup" id="pickup">
+                <option value="" disabled selected>Pick Up Location</option>
+                <option value="1" data-src="img/auckland.png">Auckland</option>
+                <option value="2" data-src="img/wellington.png">Wellington</option>
+                <option value="3" data-src="img/christchurch.png">Christchurch</option>
+              </select>
+              <select name="dropoff" id="dropoff">
+                <option value="" disabled selected>Drop Off Location</option>
+                <option value="1">Auckland</option>
+                <option value="2">Wellington</option>
+                <option value="3">Christchurch</option>
+              </select>
+              <a id="button0" role="button">Submit</a>
+              <div class="locationoutput"></div>
+            </form>
+          </div>
+          <div class="langsign">
+          <img src="img/langsign.png" alt="langn"></div>
+          <div class="lang">
+            <form class="langform">
+              <select name="lang">
+                <option value="1">English</option>
+                <option value="2">Te Reo</option>
+                <option value="3">中文</option>
+                <option value="4">日本人</option>
+              </select>
+            </form>
+          </div>
+          <div class="s1van">
+            <img class="shakey" src="img/vanback1.png" alt="vanback">
+          </div>
+          <!--Slide 2-->
+          <div class="slide slide2" >
+            <div class="infoclick">
+              <div class="background"></div>
+              <div class="cloud2"></div>
+            </div>
+            <div class="dirsign2">
+              <img src="img/signdirlrg.png" alt="signdrlrg">
+            </div>
+            <div class="van hide animated slowcustom">
+              <img class="vanimg shakey" src="img/vanside.png" alt="vanside">
+              <img class="vanwheel1 loading" src="img/wheel.png" alt="vanwheel1">
+              <img class="vanwheel2 loading" src="img/wheel.png" alt="vanwheel2">
+            </div>
+            <div class="cardr">
+              <img class="shakey" src="img/miniside.png" alt="mini">
+              <img class="miniwheel1 loading2" src="img/miniwheel.png" alt="miniwheel1">
+              <img class="miniwheel2 loading2" src="img/miniwheel.png" alt="miniwheel2">
+            </div>
+            <input id="date1" data-modal="true" class="date" data-large-default="true"
+            placeholder="Pick Up Date" type="text"  data-large-mode="true" data-max-year="2020" data-init-set="false" data-min-year="2018" data-lock="from" data-translate-mode="true" data-theme="my-style" data-format="d M Y"/>
+            <input id="date2" data-modal="true" class="date" data-large-default="true"
+            type="text" placeholder="Drop Up Date" data-large-mode="true"  data-max-year="2020" data-init-set="false" data-min-year="1800" data-lock="from" data-translate-mode="true" data-theme="my-style" data-format="d M Y"/>
+            <a id="button1"  role="button">Submit<div class="dateoutput"></div>
+          </a>
+        </div>
+        <!--Slide 3-->
+        <div class="slide slide3">
+          <div class="bgsection1s3"></div>
+          <div class="cloud3"></div>
+        </div>
+        <!--Slide 4-->
+        <div class="slide slide4">
+          <div class="bgsection1s4"></div>
+          <div class="cloud4"></div>
+          <div class="sorry hide"><img src="img/sorry.png" alt="sorry"></div>
+          <div class="opps hide"><img src="img/opps.png" alt="sorry"></div>
+          <div class="oppsboth hide"><img src="img/oppsboth.png" alt="sorry"></div>
+          <div class="s1s4van shakey">
+            <img src="img/vanfront.png" alt="vanfront">
+          </div>
+          <div class="busstopside">
+            <img src="img/busstopside.png" alt="busstop">
+          </div>
+          <div class="signpeople">
+            <img src="img/peoplesign.png" alt="peoplesign">
+          </div>
+          <label class="hide" for="people">How Many People?</label>
+          <select name="people" id="people">
+            <option value="" data-src="img/0person.png" selected="selected">How Many</option>
+            <option value="1" data-src="img/1person.png">1</option>
+            <option value="2" data-src="img/2person.png">2</option>
+            <option value="3" data-src="img/3person.png">3</option>
+            <option value="4" data-src="img/4person.png">4</option>
+            <option value="5" data-src="img/5person.png">5</option>
+            <option value="6" data-src="img/6person.png">6</option>
+          </select>
+          <a id="button" role="button">Submit</a>
+          <div class="peopleoutput"></div>
+          <img id="peoplecount" src="img/0person.png" alt="people">
+        </div>
+      </div>
+    </div>
+    <!--SECTION 1 END-->
+    <!--SECTION 2-->
+    <!--Slide 1-->
+    <div class="section section2">
+      <div class="slide slides2s1">
+        <div class="bgsection1s2 "></div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <!--Slide 1 End-->
+      <!--Slide 2-->
+      <div class="slide slides2s2">
+        <div class="roadlarge"></div>
+        <div class="cloud5"></div>
+        <div class="signsky floating2 hide">
+          <img class="signskyimg animated slow" src="img/signsky.png" alt="skysign">
+          <div class="options animated slow">
+            <a class="buttonbook" href="#3rdPage" role="button">Book</a>
+            <a class="fuelcal"  role="button">Fuel<span>Calculator</span></a>
+          </div>
+        </div>
+        <div class="plane floating hide">
+          <img class="planeimg animated slowcustom" src="img/plane.png" alt="plane">
+        </div>
+        <div class="vans5 animated hide slowcustom">
+          <img class="vanimgs5 shakey" src="img/vanside.png" alt="vanside">
+          <img class="vanwheel1s5 loading" src="img/wheel.png" alt="vanwheel1">
+          <img class="vanwheel2s5 loading" src="img/wheel.png" alt="vanwheel2">
+        </div>
+        <div class="trailer animated hide slowcustom">
+          <img class="trailerimg shakey" src="img/trailer.png" alt="trailer">
+          <img class="trailerwheel1s5 loading" src="img/wheel.png" alt="trailerwheel1">
+          <img class="trailerwheel2s5 loading" src="img/wheel.png" alt="trailerwheel1">
+        </div>
+        <div id="selectedcardiv" class="animated hide slowcustom">
+          <img id="selectedcar" class="shakey" src="img/motorbike.png" alt="selectedcar">
+        </div>
+      </div>
+      <!--Slide 2 End-->
+      <!--Slide 3-->
+      <div class="slide slides2s3">
+        <div class="bgsection2s3"></div>
+        <div id="selectedcardivfuel">
+          <img id="selectedcarfuel" src="img/selectedcar.png" alt="selectedcar">
+        </div>
+        <div>
+          <div class="mapsigncontainer">
+            <img src="img/signmap.png" alt="signmap">
+            <form class="travelcal">
+              <!--     <label for="from">From:</label> -->
+              <input type="text" id="from" placeholder="Enter Origin">
+              <!--    <label for="to">To:</label> -->
+              <input type="text" id="to" placeholder="Enter Destination">
+            </form>
+            <button id="calcRoute">Submit</button>
+            <div id="outputfail"></div>
+          </div>
+          <div class="wobble" id="googleMap"></div>
+          <div class="fuelpump">
+            <img src="img/fuelpump.png" alt="fuelpump">
+            <div id="outputpass"></div>
+            <div id="outputkm"></div>
+            <a class="buttonbook2" href="#3rdPage" role="button">Book</a>
+          </div>
+        </div>
+        <div class="wobble handleft"><img src="img/handleft.png" alt="handleft"></div>
+        <div class="wobble handright"><img src="img/handright.png" alt="handright"></div>
+      </div>
+      <!--Slide 3 End-->
+    </div>
+    <!--SECTION 2 END-->
+    <!--SECTION 3-->
+    <div class="section section3">
+      <div class="bgsection3"></div>
+      <div class="cloud6"></div>
+      <div class="reservationunder">
+        <img src="img/reserve2.png" alt="reservation">
+      </div>
+      <div class="vans6 animated  slower">
+        <img class="vanimgs6 shakey" src="img/vanside.png" alt="vanside">
+        <img class="vanwheel1s6 loading" src="img/wheel.png" alt="vanwheel1">
+        <img class="vanwheel2s6 loading" src="img/wheel.png" alt="vanwheel2">
+      </div>
+      <div class="trailer2 animated slower">
+        <img class="trailerimg2 shakey" src="img/trailer.png" alt="trailer">
+        <img class="trailerwheel1s3 loading" src="img/wheel.png" alt="trailerwheel1">
+        <img class="trailerwheel2s3 loading" src="img/wheel.png" alt="trailerwheel1">
+      </div>
+      <div id="selectedcardivpay" class="animated slower hide">
+        <img id="selectedcarpay" class="shakey" src="img/motorbikeside.png" alt="selectedcar">
+      </div>
+      <div class="reservation">
+        <img src="img/reservation.png" alt="reservation">
+      </div>
+      <div class="cardswipe">
+        <img src="img/card.png" alt="reservation">
+      </div>
+      <div class="reservationbooking hide">
+        <div class="left">
+          <div class="carselecttitle">Car Selection</div>
+          <div class="pickupdatetitle">Pick Up Date</div>
+          <div class="pickuplocationtitle">Pick Up Location</div>
+          <div class="dropoffdatetitle">Drop Off Date</div>
+          <div class="dropofflocationtitle">Drop Off Location</div>
+          <div class="daystitle">Number Of Days</div>
+          <div class="priceinfotitle">Total</div>
+        </div>
+        <div class="right">
+          <div class="selectedoption"></div>
+          <div class="pickupdate"></div>
+          <div class="pickuplocation"></div>
+          <div class="dropoffdate"></div>
+          <div class="dropofflocation"></div>
+          <div class="daystotal"></div>
+          <div class="totalprice"></div>
+        </div>
+        <!-- <button class="trigger">book</button> -->
+      </div>
+      <div class="triggerul">
+        <img src="img/paybuttonback.png" alt="paybutton">
+      </div>
+      <div class="trigger animated tada slower infinite">
+        <img src="img/paybutton.png" alt="paybutton">
+      </div>
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <form class="credit-card">
+            <div class="form-body">
+              <!-- Card Number -->
+              <img src="img/cardtype.png" alt="cardtype">
+              <label>Credit Card Number</label>
+              <input type="text" class="card-number" placeholder="0000 0000 0000 0000">
+              <label class="expirylabel">Card Expiry</label>
+              <input type="text" class="expiry" placeholder="e.g 01/19">
+              <label class="ccvlabel">CCV</label>
+              <input type="text" class="cvv" placeholder="CVV">
+              <h4 class="title">Booking Details</h4>
+              <label>Name</label>
+              <input type="text" class="name" placeholder="Enter Your Name">
+              <label>Email</label>
+              <input type="text" class="email" placeholder="Enter Your Email">
+              <!-- Buttons -->
+              <button type="submit" class="proceed-btn">Proceed</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--SECTION 3 END-->
+    <!--SECTION 4-->
+    <div class="section section4" data-anchor="4thpage">
+      <!-- <div class="roadend"></div> -->
+      <img class="roadend" src="img/auckland.png" alt="people">
+      <div class="logo">
+        <img class="kiwiana" src="img/kiwiana.png" alt="kiwiana">
+        <img src="img/adventure.png" alt="adventure">
+        <img class="transportbooking" src="img/transportbooking.png" alt="transportbooking">
+      </div>
+      <div class="cloud7"></div>
+      <div class="roadline"><img src="img/roadline.png" alt="roadline"></div>
+      <div class="s4sign"><img src="img/endsign.png" alt="end sign"></div>
+      <div class="s4van">
+        <img class="shakey" src="img/vanback1.png" alt="vanback1">
+        <div class="thanks"></div>
+      </div>
+    </div>
+    <!--SECTION 4 END-->
+  </div>
+  <!--Jquery-->
+  <script src="js/jquery.min.js"></script>
+  <!--Bulls eye Plugin-->
+  <script src="js/jquery.bullseye.js"></script>
+  <!--Full Page Plugin-->
+  <script src="js/fullpage.js"></script>
+  <!--Swiper Slider Plugin-->
+  <script src="js/swiper.min.js"></script>
+  <!--Date Dropper Plugin-->
+  <script src="js/datedropper.js"></script>
+  <!--Google Maps Api Plugin-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADMD9LFOQbB8gF8HctWzlQipyitCIdhZo&libraries=places"></script>
+  <!--Google Maps Api Script-->
+  <script src="js/map.js"></script>
+  <!--My Script-->
+  <script src="js/javascript.js"></script>
+</body>
+</html>
