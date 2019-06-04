@@ -1779,7 +1779,7 @@
 
 
 	//CLOSE PICKER
-	.on('click',function(e) {
+	.on('mousedown',function(e) {
 		if(picker) {
 			if(!picker.input.is(e.target) && !picker.element.is(e.target) && picker.element.has(e.target).length === 0) {
 				picker_hide();
