@@ -93,13 +93,13 @@ function createSlide(value, price) {
 $('#fullpage').fullpage({
     sectionsColor: ['#FF69B4', '#8a9b9c', '#f05a28', '#fec401'],
     navigation: true,
-    slidesNavigation: true,
+    slidesNavigation: false,
     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
     anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', 'lastPage'],
     animateAnchor: true,
     lazyLoading: true,
     fitToSection: true,
-    scrollBar: false
+    scrollBar: true
 });
 
 
