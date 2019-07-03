@@ -99,7 +99,7 @@ $('#fullpage').fullpage({
     animateAnchor: true,
     lazyLoading: true,
     fitToSection: true,
-    scrollBar: true
+    scrollBar: false
 });
 
 
