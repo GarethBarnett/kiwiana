@@ -166,7 +166,6 @@ locationButton.addEventListener('click', function() {
             $('.vanwheel1').removeClass('loading');
             $('.vanwheel2').removeClass('loading');
             $('.van').removeClass('fadeInLeftBig');
-            $('#menu').removeClass('hide');
         }, 4300);
 
 
@@ -227,6 +226,7 @@ dateButton.addEventListener('click', function() {
         /** remove classes and add for next page */
         setTimeout(function () {
             window.location.href = "#firstPage/3";
+            $('#menu').removeClass('hide');
             $('.vanwheel1').removeClass('loading');
             $('.vanwheel2').removeClass('loading');
             $('.van').removeClass('vandr');
@@ -448,6 +448,7 @@ peopleButton.addEventListener('click', function() {
 
         document.location = '#secondPage/1';
         setTimeout(function () {
+            $('.optionButton').removeClass('hide');
             $('.signsky').removeClass('hide');
             $('.signskyimg').addClass('bounceInDown');
             $('.options').addClass('bounceInDown');

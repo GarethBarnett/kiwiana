@@ -88,7 +88,7 @@ button {
   width: 100%; }
 
 .hide {
-  display: none; }
+  display: none !important; }
 
 .fp-controlArrow {
   display: none; }
